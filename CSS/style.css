@@ -138,7 +138,7 @@ nav a:hover {
 .main-text {
   width: 50%;
   text-align: center;
-  margin-top: 1.5%;
+  margin-top: 0.5%;
   margin-bottom: 5%;
   padding: 3%;
   height: 100%;
@@ -248,7 +248,13 @@ nav a:hover {
   }
 
   .main-text p{
-    font-size: 2.1rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width:518px){
+  .main-text p{
+    font-size: 1.7rem;
   }
 }
 
@@ -272,9 +278,9 @@ nav a:hover {
   }
 }
 
-@media (max-width: 299px) {
+@media (max-width: 395px) {
   .main-text p {
-    font-size: 22px;
+    font-size: 1.5rem;
   }
 }
 
