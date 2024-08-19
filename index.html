@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sweet Home bakers</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
     <link rel="stylesheet" href="CSS\style.css" />
+    <link rel="stylesheet" href="CSS/Nav.css">
   </head>
   <body>
     <header>
       <div class="subNav">
-        <a href=""
+        <a href="local.html"
           ><img
             style="margin: 4% 0% 0% 6%"
             src="images/Home/Mulberry_Funky_Cookie_Logo__1_-removebg-preview.png"
@@ -31,7 +32,7 @@
                 <a href=""><i class="fa-brands fa-searchengin"></i></a>
               </td>
               <td>
-                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
               </td>
               <td>
                 <a href=""><i class="fa-solid fa-user"></i></a>
@@ -56,18 +57,18 @@
                   /></svg
               ></a>
             </li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Our Menu</a></li>
-            <li><a href="#">About </a></li>
+            <li><a href="local.html">Home</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="abouts.html">About </a></li>
             <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="login.html">Login</a></li>
           </ul>
           <ul>
-            <li class="hideOnMobile"><a href="#">Home</a></li>
-            <li class="hideOnMobile"><a href="#">Our Menu</a></li>
-            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile"><a href="local.html">Home</a></li>
+            <li class="hideOnMobile"><a href="#menu">Our Menu</a></li>
+            <li class="hideOnMobile"><a href="abouts.html">About</a></li>
             <li class="hideOnMobile"><a href="#">Contact Us</a></li>
-            <li class="hideOnMobile"><a href="#">Login</a></li>
+            <li class="hideOnMobile"><a href="login.html">Login</a></li>
             <li class="menu-button" onclick="showSidebar()">
               <a href="#"
                 ><svg
@@ -112,22 +113,21 @@
 
     <!-- sction 2 split page -->
 
-    <section class="split1">
+    <section class="split1" id="menu">
       <div class="container">
         <div class="split left">
           <h1>Somme what local</h1>
 
-          <a href="#" class="btn">View More</a>
+          <a href="local.html" class="btn">View More</a>
         </div>
         <div class="split right">
           <h1>Some what special</h1>
-          <a href="#" class="btn">View More</a>
+          <a href="special.html" class="btn">View More</a>
         </div>
       </div>
     </section>
 
-    <footer>
-      <div class="main-footer">
+    <footer class="main-footer">
         <div class="footer-text">
           <div>
             <h1>Social Media</h1>
@@ -274,7 +274,7 @@
                   ><svg
                     class="instagram"
                     xmlns="http://www.w3.org/2000/svg"
-                    width="2rem"
+                    width="1.9rem"
                     viewBox="0 0 448 512"
                   >
                     <defs>
@@ -322,9 +322,7 @@
             </div>
           </form>
         </div>
-      </div>
     </footer>
-
     <script src="JS/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+}
+.about-header{
+    text-align: center;
+    margin-top: 4%;
+    font-size: 30px;
+}
+
+.main-card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+
+}
+/* .img{
+    width: 40%;
+}
+*/
+.text{
+  text-align:start;
+  overflow: hidden;
+} 
+
+h3{
+    font-size: 30px;
+}
+p{
+    line-height: 2;
+    font-size: 20px;
+}
+
+.suggestion-form {
+display: flex;
+flex-direction: column;
+}
+
+
+.suggestion-form input, 
+.suggestion-form textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border-radius: 5px;
+border: 1px solid #ccc;
+font-size: 16px;
+}
+
+.suggestion-form button {
+padding: 10px 20px;
+background-color: #d2691e;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+}
+
+.suggestion-form button:hover {
+background-color: #b35619;
+}
+
+
+@media (max-width: 1040px) {
+.main-card:nth-child(even)
+{
+    flex-wrap: wrap-reverse;
+}
+.text{
+    text-align:center;
+    overflow: hidden;
+  } 
+
+}
+
+
+@media (max-width: 768px) {
+.main-card{
+    padding: 3%;
+}
+
+    .content-container h2 {
+        font-size: 24px;
+    }
+
+
+}

@@ -11,117 +11,8 @@
   --speed: 1000ms;
 }
 
-/* body{
-  background-color:rgb(241, 239, 239);
-} */
-
-* {
-  margin: 0;
-  padding: 0;
-}
-.subNav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: rgb(138, 205, 228);
-  padding: 0px 3%;
-}
-i {
-  font-size: 1.3rem;
-  transition: all 0.3s ease; /* Smooth transition for the hover effect */
-}
-
-/* i:hover { */
-/* font-size: 1.5rem; Change font size on hover */
-/* color: blue; Change color on hover */
-/* cursor: pointer; */
-/* } */
-table tr td {
-  padding: 10px;
-}
-
-table tr td input {
-  padding: 1.5%;
-  border-radius: 10px;
-  width: 100%;
-}
-table tr td input:hover {
-  border: 2px solid blue;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-
-/* Main Nav Bar */
-
-nav {
-  /* background-color: rgba(224, 221, 221, 0.877); */
-
-  background-color: rgb(241, 239, 239);
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-}
-nav ul {
-  width: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-nav li {
-  height: 50px;
-}
-nav a {
-  height: 100%;
-  padding: 0 50px;
-  font-weight: bold;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  color: black;
-}
-nav a:hover {
-  background-color: #b9b7b7;
-}
-
-.sidebar {
-  position: fixed;
-  right: 0;
-  height: 100vh;
-  width: 250px;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  list-style: none;
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.sidebar li {
-  width: 100%;
-}
-.sidebar a {
-  width: 100%;
-}
-.menu-button {
-  display: none;
-}
-@media (max-width: 800px) {
-  nav ul {
-    justify-content: flex-end;
-  }
-  .hideOnMobile {
-    display: none;
-  }
-  .menu-button {
-    display: block;
-  }
-}
-@media (max-width: 400px) {
-  .sidebar {
-    width: 100%;
-  }
+body{
+  background-color:lightblue;
 }
 
 .main {
@@ -148,6 +39,7 @@ nav a:hover {
 .main-text h1 {
   font-size: clamp(2.5rem, 3vw, 4rem);
   margin-top: 2%;
+  color: rgb(0, 0, 0);
 }
 
 .main-text p {
@@ -161,7 +53,8 @@ nav a:hover {
 .main-text button {
   background-color: transparent;
   padding: 2.5% 7%;
-  border: 3px solid blue;
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
   margin-top: 3%;
   margin-bottom: 2%;
   font-size: 1.4rem;
@@ -171,8 +64,8 @@ nav a:hover {
 }
 
 .main-text button:hover {
-  background-color: rgb(100, 197, 230);
-  color: white;
+  background-color: rgb(0, 162, 255);
+  color: rgb(0, 0, 0);
   cursor: pointer;
   border-color: black;
 }
@@ -197,8 +90,7 @@ nav a:hover {
   .main-text {
     width: 100%;
     z-index: 2;
-    backdrop-filter: blur(2px);
-    color: #1d0101;
+    color: #000000;
     height: auto;
   }
   .main-text button{
@@ -212,7 +104,7 @@ nav a:hover {
     color: black;
     /* color:rgb(255, 255, 255); */
     text-shadow: 2px 2px 4px rgb(255, 255, 255), 
-    4px 4px 8px rgb(224, 219, 219);  }
+    4px 4px 8px rgb(207, 207, 207);  }
 
     .main{
       padding-bottom: 1%;
@@ -298,7 +190,7 @@ nav a:hover {
 .hea {
   font-size: 1.5rem;
   text-align: center;
-  background-color: rgba(119, 213, 245, 0.452);
+  background-color:lightblue;
   padding: 2%;
 }
 
@@ -463,145 +355,5 @@ nav a:hover {
     font-weight: 100;
     width: 7rem;
     padding: 1rem;
-  }
-}
-
-/* footer */
-
-footer {
-  padding-top: 3%;
-  background-color: lightblue;
-}
-
-.social {
-  padding: 7% 0%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  /* background-color: rgba(230, 227, 227, 0.63); */
-  margin: 5% 0;
-}
-
-.social div {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  border: 2px solid;
-  text-align: center;
-  padding: 0.5%;
-  margin: 0.5% 2%;
-}
-.fa-facebook:hover {
-  color: blue;
-}
-
-.instagram {
-  transition: all 0.3s ease;
-}
-
-.instagram:hover path {
-  fill: url(#instagram-gradient); /* Apply the gradient on hover */
-}
-.fa-linkedin:hover {
-  color: blue;
-}
-
-.fa-x-twitter {
-  color: #333;
-}
-.fa-x-twitter:hover {
-  color: rgb(0, 0, 0);
-}
-.fa-youtube:hover {
-  color: red;
-}
-
-.fa-pinterest:hover {
-  color: red;
-}
-
-.mail {
-  width: 30%;
-  text-align: center;
-}
-.mail input {
-  padding: 2%;
-  margin-top: 5%;
-}
-.mail button {
-  margin-top: 2%;
-  padding: 2% 5%;
-  background: transparent;
-  border: 2px solid blue;
-}
-
-.main-footer {
-  padding: 0% 2%;
-  display: flex;
-  justify-content: space-around;
-  background-color: lightblue;
-  flex-wrap: wrap;
-}
-.footer-text {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-text div {
-  margin: 0px 1%;
-  flex-wrap: wrap;
-}
-
-.footer-text div h1 {
-  margin-bottom: 2%;
-  text-align: center;
-}
-
-/* Media Quries for footer */
-
-@media (max-width: 1170px) {
-  .main-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer-text {
-    width: 100%;
-  }
-
-  .footer-text div {
-    margin: 0px 5%;
-  }
-  .mail input {
-    margin-top: 5%;
-    width: 100%;
-  }
-}
-
-@media (max-width: 700px) {
-  .footer-text {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-  }
-  .footer-text div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .heading-1 {
-    width: 100%;
-    text-wrap: pretty;
-    font-size: larger;
-  }
-  .mail input {
-    width: 100%;
-  }
-
-  .social div{
-    padding: 2%;
   }
 }
