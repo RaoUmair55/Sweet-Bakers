@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Bakery</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
+    <link rel="stylesheet" href="./CSS/cart.css">
+    <link rel="stylesheet" href="./CSS/Nav.css">
+</head>
+
+<section>
+
+    <header>
+        <div class="subNav">
+            <a href="index.html"><img style="margin: 4% 0% 0% 6%"
+                    src="images/Home/Mulberry_Funky_Cookie_Logo__1_-removebg-preview.png" width="85px" height="auto"
+                    alt="Logo" /></a>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="search" placeholder=" Find what you need!" />
+                        </td>
+                        <td>
+                            <a href=""><i class="fa-brands fa-searchengin"></i></a>
+                        </td>
+                        <td>
+                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                        </td>
+                        <td>
+                            <a href=""><i class="fa-solid fa-user"></i></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <nav>
+            <nav>
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960"
+                                width="26">
+                                <path
+                                    d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                            </svg></a>
+                    </li>
+                    <li><a href="local.html">Home</a></li>
+                    <li><a href="index.html#menu">Our Menu</a></li>
+                    <li><a href="abouts.html">About </a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+                <ul>
+                    <li class="hideOnMobile"><a href="local.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="index.html#menu">Our Menu</a></li>
+                    <li class="hideOnMobile"><a href="abouts.html">About</a></li>
+                    <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
+                    <li class="hideOnMobile"><a href="login.html">Login</a></li>
+                    <li class="menu-button" onclick="showSidebar()">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960"
+                                width="26">
+                                <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                            </svg></a>
+                    </li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+
+
+<section class="body">
+
+    
+    <div class="container">
+        <form action="#" class="form">
+            <h3>Billing and Shipping</h3>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <label for="email">First Name <small>*</small> </label>
+            <input type="text" id="fname" placeholder="Enter your first name" required>
+            <label for="email">Last Name <small>*</small></label>
+            <input type="text" id="lname" placeholder="Enter your last name" required>
+            <label for="email">Phone <small>*</small></label>
+            <input type="tel" id="number" placeholder="Enter yourPhone" required>
+            <label for="email">Address <small>*</small></label>
+            <input type="text" id="address" placeholder="Enter your full addess e.g. street, house no." required>
+            <label for="email">City <small>*</small></label>
+            <input type="text" id="city" placeholder="Enter your city" required>
+            <input type="number" name="zipcode" id="zipcode" placeholder="Zipcode" required>
+            <p class="commment">
+                <label for="note">Order Note </label>
+                <textarea name="order_comment" id="order_comment" cols="30" rows="10"
+                    placeholder="Note about your order, e.g. special notes for delivery or icing message on cake."></textarea>
+            </p>
+    
+            <div class="btn">
+    
+                <button>
+                    <a href="#" class="btn-primary  clos">PLace Order</a>
+                </button>
+                <button>
+                    <a href="#" class="btn-primary clos">Cancel</a>
+                </button>
+            </div>
+    
+    
+        </form>
+    </div>
+    
+
+
+    <div class="cart-container">
+        <h1>Your Cart</h1>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chocolate Cake</td>
+                    <td>
+                        <input type="number" value="1" min="1">
+                    </td>
+                    <td>$15.00</td>
+                    <td>$15.00</td>
+                </tr>
+                <tr>
+                    <td>Vanilla Cupcakes</td>
+                    <td>
+                        <input type="number" value="2" min="1">
+                    </td>
+                    <td>$5.00</td>
+                    <td>$10.00</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="cart-summary">
+            <h2>Order Summary</h2>
+            <p>Subtotal: $25.00</p>
+            <p>Tax: $2.00</p>
+            <h3>Total: $27.00</h3>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2><span class="highlight">Bakery</span> Sweet Home</h2>
+            <p>Indulge in our freshly baked treats made with the finest ingredients. We bring the warmth and comfort of home-baked goodness right to your table.</p>
+            <div class="contact">
+                <span><i class="fas fa-phone"></i> &nbsp; 123-456-789</span>
+                <span><i class="fas fa-envelope"></i> &nbsp; info@bakery.com</span>
+            </div>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+  <hr class="line">
+        <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <table>
+                <tr>
+                    <td><i class="fas fa-home hel"></i></td>
+                    <td class="hov"><a href="#">Home</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-info-circle hel"></i></td>
+                    <td><a href="#">About</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-utensils hel"></i></td>
+                    <td><a href="#">Menu</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-shopping-cart hel"></i></td>
+                    <td><a href="#">Cart</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-images hel"></i></td>
+                    <td><a href="#">Login</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-envelope-open-text hel"></i></td>
+                    <td><a href="#">Contact</a></td>
+                </tr>
+            </table>
+        </div>
+  <hr>
+        <div class="footer-section menu">
+            <h2>Popular Items</h2>
+            <table>
+                <tr>
+                    <td><i class="fas fa-birthday-cake hel"></i></td>
+                    <td><a href="#">Chocolate Cake</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-bread-slice hel"></i></td>
+                    <td><a href="#">Browines</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-cookie-bite hel"></i></td>
+                    <td><a href="#">Cookies</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-mug-hot hel"></i></td>
+                    <td><a href="#">Cupcakes</a></td>
+                </tr>
+                <tr>
+                    <td><span class="material-symbols-outlined hel">
+                      icecream
+                      </span></td>
+                    <td><a href="#">Dessert</a></td>
+                </tr>
+            </table>
+        </div>
+  <hr>
+        <div class="footer-section newsletter">
+            <h2>Join Our Newsletter</h2>
+            <p>Subscribe to receive special offers, updates, and delicious recipes straight to your inbox.</p>
+            <form>
+                <input type="email" placeholder="Your email address..." required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 Sweet Home | Designed by  " Rao Umair "   | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </div>
+  </footer>
+    <script src="JS/script.js"></script>
+
+
+
+    <script>
+        document.querySelector('.checkout-btn').addEventListener('click', function() {
+     const container = document.querySelector('.container');
+     container.classList.add('apear');
+ });
+
+ document.querySelector('.clos').addEventListener('click', function() {
+     const container = document.querySelector('.container');
+     container.classList.remove('apear');
+     alert("Order placed you'll recive within 30 mintus")
+ });
+ </script>
+
+  
+
+</body>
+
+</html>

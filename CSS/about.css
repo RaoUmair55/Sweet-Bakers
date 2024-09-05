@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+}
+.about-header{
+    text-align: center;
+    margin-top: 4%;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase; /* Optional: Makes the text uppercase */
+    letter-spacing: 3px;
+
+}
+
+.main-card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+
+}
+/* .img{
+    width: 40%;
+}
+*/
+.text{
+  text-align:start;
+  overflow: hidden;
+  font-family: 'Dancing Script';
+  font-weight: 500;
+
+} 
+
+h3{
+    font-size: 30px;
+    font-family: 'Poppins';
+    color: transparent; /* Make the text color transparent */
+    -webkit-text-stroke: 3px black; /* Outline color and thickness */
+    text-transform: uppercase; /* Optional: Makes the text uppercase */
+    letter-spacing: 2px;
+}
+p{
+    line-height: 2; 
+    font-size: 25px;
+}
+
+.suggestion-form {
+display: flex;
+flex-direction: column;
+}
+
+
+.suggestion-form input, 
+.suggestion-form textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border-radius: 5px;
+border: 1px solid #ccc;
+font-size: 16px;
+}
+
+.suggestion-form button {
+padding: 10px 20px;
+background-color: #d2691e;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+}
+
+.suggestion-form button:hover {
+background-color: #b35619;
+}
+
+
+@media (max-width: 1040px) {
+.main-card:nth-child(even)
+{
+    flex-wrap: wrap-reverse;
+}
+.text{
+    text-align:center;
+    overflow: hidden;
+  } 
+
+}
+
+
+@media (max-width: 768px) {
+.main-card{
+    padding: 3%;
+}
+
+    .content-container h2 {
+        font-size: 24px;
+    }
+
+
+}
+
+
+.img2{
+    box-shadow: 1px 3px 8px rgb(0, 0, 0);
+    transition: .5s;
+}
+
+
+.img2:hover{
+    transform: scale(1.2);
+}
