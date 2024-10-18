@@ -13,7 +13,7 @@
 <body>
   <header>
     <div class="subNav">
-      <a href="local.html"><img style="margin: 4% 0% 0% 6%" src="images/Home/Mulberry_Funky_Cookie_Logo__1_-removebg-preview.png"
+      <a href="index.html"><img style="margin: 4% 0% 0% 6%" src="images/Home/Mulberry_Funky_Cookie_Logo__1_-removebg-preview.png"
           width="85px" height="auto" alt="Logo" /></a>
       <div>
         <table>
@@ -43,17 +43,17 @@
                   d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
               </svg></a>
           </li>
-          <li><a href="local.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="index.html#menu">Our Menu</a></li>
           <li><a href="abouts.html">About </a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
           <li><a href="login.html">Login</a></li>
         </ul>
         <ul>
           <li class="hideOnMobile"><a href="local.html">Home</a></li>
           <li class="hideOnMobile"><a href="index.html#menu">Our Menu</a></li>
           <li class="hideOnMobile"><a href="abouts.html">About</a></li>
-          <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+          <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
           <li class="hideOnMobile"><a href="login.html">Login</a></li>
           <li class="menu-button" onclick="showSidebar()">
             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
@@ -65,8 +65,17 @@
     </nav>
   </header>
 
-  <section class="standard">
-    <h1>Standard Sweets</h1>
+
+
+   
+  <section class="tab-buttons">
+    <button class="tab-button active" onclick="showTab('premium')">Premium Sweets</button>
+    <button class="tab-button" onclick="showTab('standard')">Standard Sweets</button>
+    <button class="tab-button" onclick="showTab('baklava')">Baklava</button>
+  </section>
+  
+  <section id="premium" class="tab-content active">
+    <!-- Premium sweets content here -->
     <div class="sub1">
       <div>
         <img src="images/LocalMathi/plainBarffi.jpg" alt="" />
@@ -160,10 +169,11 @@
         <button class="Cart-btn">Add to cart</button>
       </div>
     </div>
+  
   </section>
-
-  <section class="standard">
-    <h1>Premium Sweets</h1>
+  
+  <section id="standard" class="tab-content">
+    <!-- Standard sweets content here -->
     <div class="sub1">
       <div>
         <img class="im" src="images/LocalMathi/Premium Sweets/Ladoo-Motichor -Magaz.jpg" alt="" />
@@ -258,8 +268,302 @@
       </div>
     </div>
   </section>
+  
+  <section id="baklava" class="tab-content">
+    <!-- Baklava content here -->
+    <div class="sub1">
+      <div>
+        <img class="im" src="images/LocalMathi/Baklava/AsabaeBaklava.jpeg" alt="" />
+        <ul>
+          <li>Ladoo Motichor Magaz</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+      <div>
+        <img src="images/LocalMathi/Baklava/Baklava-Walnat.jpg" alt="" />
+        <ul>
+          <li>Manpasand White</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+      <div>
+        <img src="images/LocalMathi/Baklava/Boukaj-Baklava.jpg" alt="" />
+        <ul>
+          <li>Mapasand Green</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+      <div>
+        <img src="images/LocalMathi/Baklava/Caremal Baklava.jpeg" alt="" />
+        <ul>
+          <li>Anjeer Almond Rolls</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+    </div>
 
-  <section class="standard mar">
+    <div class="sub1">
+      <div>
+        <img src="images/LocalMathi/Baklava/Pista-Baklava.jpeg" alt="" />
+        <ul>
+          <li>Badam Barfi</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+      <div>
+        <img src="images/LocalMathi/Baklava/Walnat Special.jpeg" alt="" />
+        <ul>
+          <li>Badam Pak</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+      <div>
+        <img src="images/LocalMathi/Baklava/AsabaeBaklava.jpeg" alt="" />
+        <ul>
+          <li>Saib cham cham</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+      <div>
+        <img src="images/LocalMathi/Baklava/Pista-Baklava.jpeg" alt="" />
+        <ul>
+          <li>White cham chamr</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+    </div>
+  
+  </section>
+
+
+
+  <!-- <section class="standard">
+    <h1>Standard Sweets</h1>
+    <div class="sub1">
+      <div>
+        <img src="images/LocalMathi/plainBarffi.jpg" alt="" />
+        <ul>
+          <li>Plain Barfi</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+      <div>
+        <img src="images/LocalMathi/plain Qalaqand.jpg" alt="" />
+        <ul>
+          <li>Plain Qalaqand Barfi</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+      <div>
+        <img src="images/LocalMathi/Gulab-Jaman.jpeg" alt="" />
+        <ul>
+          <li>Gulab Jaman</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+      <div>
+        <img src="images/LocalMathi/Ladoo-Motichor.jpg" alt="" />
+        <ul>
+          <li>Ladoo Motichor</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+    </div>
+
+    <div class="sub1">
+      <div>
+        <img src="images/LocalMathi/Amrati.jpeg" alt="" />
+        <ul>
+          <li>Amrati</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+      <div>
+        <img src="images/LocalMathi/Dhoda.jpeg" alt="" />
+        <ul>
+          <li>Special Dodha</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+      <div>
+        <img src="images/LocalMathi/Saib Cham cham.jpeg" alt="" />
+        <ul>
+          <li>Saib cham cham</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+      <div>
+        <img src="images/LocalMathi/White Cham cham.jpeg" alt="" />
+        <ul>
+          <li>White cham chamr</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section class="standard">
+    <h1>Premium Sweets</h1>
+    <div class="sub1">
+      <div>
+        <img class="im" src="images/LocalMathi/Premium Sweets/Ladoo-Motichor -Magaz.jpg" alt="" />
+        <ul>
+          <li>Ladoo Motichor Magaz</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+      <div>
+        <img src="images/LocalMathi/Premium Sweets/Manpsand-White.jpg" alt="" />
+        <ul>
+          <li>Manpasand White</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+      <div>
+        <img src="images/LocalMathi/Premium Sweets/Mapasand-Green.jpg" alt="" />
+        <ul>
+          <li>Mapasand Green</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+      <div>
+        <img src="images/LocalMathi/Premium Sweets/Anjeer Almond Rolls.jpeg" alt="" />
+        <ul>
+          <li>Anjeer Almond Rolls</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+    </div>
+
+    <div class="sub1">
+      <div>
+        <img src="images/LocalMathi/Premium Sweets/Badam-Barfi.jpeg" alt="" />
+        <ul>
+          <li>Badam Barfi</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+      <div>
+        <img src="images/LocalMathi/Premium Sweets/Badam-Pak.jpg" alt="" />
+        <ul>
+          <li>Badam Pak</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+      <div>
+        <img src="images/LocalMathi/Saib Cham cham.jpeg" alt="" />
+        <ul>
+          <li>Saib cham cham</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+      <div>
+        <img src="images/LocalMathi/White Cham cham.jpeg" alt="" />
+        <ul>
+          <li>White cham chamr</li>
+          <li>
+            Starting Form >
+            <i style="font-size: 15px" class="fas fa-rupee-sign"></i><strong>:</strong>1500
+          </li>
+        </ul>
+        <button class="Cart-btn">Add to cart</button>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section class="standard mar">
     <h1>Baklave</h1>
     <div class="sub1">
       <div>
@@ -354,158 +658,137 @@
         <button class="Cart-btn">Add to cart</button>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <footer  class="main-footer">
-      <div class="footer-text">
-        <div>
-          <h1>Social Media</h1>
-          <table>
-            <tr>
-              <td>
-                <a href="#" target="_blank"><i style="font-size: 20px" class="fa-brands fa-facebook"></i></a>
-              </td>
-              <td>Follow Us on Facebook</td>
-            </tr>
-            <tr>
-              <td>
-                <a href="#" target="_blank"><svg class="instagram" xmlns="http://www.w3.org/2000/svg" width="20px"
-                    viewBox="0 0 448 512">
-                    <defs>
-                      <linearGradient id="instagram-gradient" gradientTransform="rotate(45)">
-                        <stop offset="0%" stop-color="#405de6" />
-                        <stop offset="20%" stop-color="#5851db" />
-                        <stop offset="40%" stop-color="#833ab4" />
-                        <stop offset="60%" stop-color="#c13584" />
-                        <stop offset="80%" stop-color="#e1306c" />
-                        <stop offset="100%" stop-color="#fd1d1d" />
-                      </linearGradient>
-                    </defs>
 
-                    <path
-                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                  </svg></a>
-              </td>
-              <td>Check Updates on Insta</td>
-            </tr>
-            <tr>
-              <td>
-                <a href="" target="_blank"><i style="font-size: 20px" class="fa-brands fa-x-twitter"></i>
-                </a>
-              </td>
-              <td>Follow us on Twitter</td>
-            </tr>
-          </table>
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2><span class="highlight">Bakery</span> Sweet Home</h2>
+            <p>Indulge in our freshly baked treats made with the finest ingredients. We bring the warmth and comfort of home-baked goodness right to your table.</p>
+            <div class="contact">
+                <span><i class="fas fa-phone"></i> &nbsp; 123-456-789</span>
+                <span><i class="fas fa-envelope"></i> &nbsp; info@bakery.com</span>
+            </div>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
         </div>
-        <div>
-          <h1>Address</h1>
-          <table>
-            <tr>
-              <td>
-                <i style="font-size: 20px" class="fa-solid fa-location-dot"></i>
-              </td>
-              <td>
-                <address>Range Road Rawalpindi</address>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <i style="font-size: 20px" class="fa-solid fa-phone-volume"></i>
-              </td>
-              <td>+92-433-5513998</td>
-            </tr>
-            <tr>
-              <td>
-                <i style="font-size: 20px" class="fa-solid fa-envelope"></i>
-              </td>
-              <td>rao9376@gmail.com</td>
-            </tr>
-          </table>
+  <hr class="line">
+        <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <table>
+                <tr>
+                    <td><i class="fas fa-home hel"></i></td>
+                    <td class="hov"><a href="#">Home</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-info-circle hel"></i></td>
+                    <td><a href="#">About</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-utensils hel"></i></td>
+                    <td><a href="#">Menu</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-shopping-cart hel"></i></td>
+                    <td><a href="#">Cart</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-images hel"></i></td>
+                    <td><a href="#">Login</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-envelope-open-text hel"></i></td>
+                    <td><a href="#">Contact</a></td>
+                </tr>
+            </table>
         </div>
-        <div>
-          <h1>Services</h1>
-          <table>
-            <tr>
-              <td>
-                <i style="font-size: 20px" class="fa-solid fa-business-time"></i>
-              </td>
-              <td>27 hour active</td>
-            </tr>
-            <tr>
-              <td>
-                <i style="font-size: 20px" class="fa-solid fa-truck"></i>
-              </td>
-              <td>Free Delivery</td>
-            </tr>
-            <tr>
-              <td>
-                <i style="font-size: 20px" class="fa-regular fa-comment"></i>
-              </td>
-              <td>24/7 Support</td>
-            </tr>
-            <tr>
-              <td>
-                <i style="font-size: 20px" class="fa-regular fa-credit-card"></i>
-              </td>
-              <td>Secure Payment</td>
-            </tr>
-            <tr>
-              <td>
-                <i style="font-size: 20px" class="fa-solid fa-lock"></i>
-              </td>
-              <td>100% Secure</td>
-            </tr>
-          </table>
+  <hr>
+        <div class="footer-section menu">
+            <h2>Popular Items</h2>
+            <table>
+                <tr>
+                    <td><i class="fas fa-birthday-cake hel"></i></td>
+                    <td><a href="#">Chocolate Cake</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-bread-slice hel"></i></td>
+                    <td><a href="#">Browines</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-cookie-bite hel"></i></td>
+                    <td><a href="#">Cookies</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-mug-hot hel"></i></td>
+                    <td><a href="#">Cupcakes</a></td>
+                </tr>
+                <tr>
+                    <td><span class="material-symbols-outlined hel">
+                      icecream
+                      </span></td>
+                    <td><a href="#">Dessert</a></td>
+                </tr>
+            </table>
         </div>
-      </div>
-      <div class="mail">
-        <h1 class="heading-1">Send Us Email to keep Update</h1>
-        <form action="">
-          <input type="email" name="email" placeholder="Your Email" />
-          <button type="submit">Subscribe</button>
-
-          <div class="social">
-            <div class="s11">
-              <a href="#" target="_blank"><i style="font-size: 2rem" class="fa-brands fa-facebook"></i></a>
-            </div>
-            <div class="s21">
-              <a href="#" target="_blank"><svg class="instagram" xmlns="http://www.w3.org/2000/svg" width="1.9rem"
-                  viewBox="0 0 448 512">
-                  <defs>
-                    <linearGradient id="instagram-gradient" gradientTransform="rotate(45)">
-                      <stop offset="0%" stop-color="#405de6" />
-                      <stop offset="20%" stop-color="#5851db" />
-                      <stop offset="40%" stop-color="#833ab4" />
-                      <stop offset="60%" stop-color="#c13584" />
-                      <stop offset="80%" stop-color="#e1306c" />
-                      <stop offset="100%" stop-color="#fd1d1d" />
-                    </linearGradient>
-                  </defs>
-
-                  <path
-                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                </svg></a>
-            </div>
-            <div class="s31">
-              <a href="" target="_blank"><i style="font-size: 2rem" class="fa-brands fa-linkedin"></i>
-              </a>
-            </div>
-            <div class="s41">
-              <a href="" target="_blank"><i style="font-size: 2rem" class="fa-brands fa-x-twitter"></i>
-              </a>
-            </div>
-            <div class="s51">
-              <a href="" target="_blank"><i style="font-size: 2rem" class="fa-brands fa-youtube"></i></a>
-            </div>
-            <div class="s61">
-              <a href="" target="_blank"><i style="font-size: 2rem" class="fa-brands fa-pinterest"></i></a>
-            </div>
-          </div>
-        </form>
-      </div>
+  <hr>
+        <div class="footer-section newsletter">
+            <h2>Join Our Newsletter</h2>
+            <p>Subscribe to receive special offers, updates, and delicious recipes straight to your inbox.</p>
+            <form>
+                <input type="email" placeholder="Your email address..." required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 Sweet Home | Designed by  " Rao Umair "   | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </div>
   </footer>
-
   <script src="JS/local.js"></script>
+  <script>
+    function showTab(tabId) {
+  const buttons = document.querySelectorAll('.tab-button');
+  const contents = document.querySelectorAll('.tab-content');
+  
+  contents.forEach(content => {
+    if (content.classList.contains('active')) {
+      content.classList.add('exiting'); // Add exiting class to current active content
+    }
+  });
+  
+  buttons.forEach(button => {
+    if (button.textContent.toLowerCase() === tabId) {
+      button.classList.add('active');
+    } else {
+      button.classList.remove('active');
+    }
+  });
+  
+  // Remove the exiting class and update active content
+  setTimeout(() => {
+    contents.forEach(content => {
+      if (content.id === tabId) {
+        content.classList.remove('exiting'); // Remove exiting class from new content
+        content.classList.add('active'); // Add active class to new content
+        content.style.display = 'block'; // Ensure the new content is displayed
+      } else {
+        content.classList.remove('active');
+        content.classList.remove('exiting');
+        content.style.display = 'none'; // Ensure non-active content is hidden
+      }
+    });
+  }, 500); // Timeout should match the duration of the slideOut animation
+}
+
+// Initialize the first tab as visible
+document.addEventListener('DOMContentLoaded', () => showTab('premium'));
+
+  </script>
 </body>
 
 </html>

@@ -10,6 +10,9 @@
   />
   <link rel="stylesheet" href="CSS\cakes.css" />
   <link rel="stylesheet" href="CSS/Nav.css">
+  <link rel="stylesheet" href="CSS/cart.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
 
 </head>
 <body>
@@ -35,7 +38,7 @@
                   <a href=""><i class="fa-brands fa-searchengin"></i></a>
                 </td>
                 <td>
-                  <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                  <a href="#"><i onclick="displayCart()" class="fa-solid fa-cart-shopping"></i></a>
                 </td>
                 <td>
                   <a href=""><i class="fa-solid fa-user"></i></a>
@@ -63,14 +66,14 @@
               <li><a href="local.html">Home</a></li>
               <li><a href="index.html#menus">Our Menu</a></li>
               <li><a href="abouts.html">About </a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
               <li><a href="login.html">Login</a></li>
             </ul>
             <ul>
               <li class="hideOnMobile"><a href="local.html">Home</a></li>
               <li class="hideOnMobile"><a href="index.html#menus">Our Menu</a></li>
               <li class="hideOnMobile"><a href="abouts.html">About</a></li>
-              <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+              <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
               <li class="hideOnMobile"><a href="login.html">Login</a></li>
               <li class="menu-button" onclick="showSidebar()">
                 <a href="#"
@@ -100,53 +103,53 @@
             <div class="box">
                 <img src="./images/cakes/brown cake.jpeg" alt="">
                 <div class="name">
-                <p>Lotus Cake</p>
+                <p class="pName">Lotus Cake</p>
                 <p>2.5 lb</p>
                 </div>
             
                 <p style="font-size:10px;margin-top:2%; ">
                     Lotus biscoff spread with cream cheese  on a fliffy vanilla <br> sponge and crushed lotus biscuits on top
                 </p>
-                <p style="font-size:15px; font-weight:bold; padding:2% 0px; text-align:center;">price: RS 2000</p>
-                <div class="bt"> <button class="order-button  Cart-btn">Add to cart</button>
+                <p style="font-size:15px; font-weight:bold; padding:2% 0px; text-align:center;">price:RS <span class="pPrice">2000 </span></p>
+                <div class="bt"> <button class="btn99 order-button  Cart-btn ">Add to cart</button>
                 </div>            </div>
             <div class="box">
                 <img src="./images/cakes/cake2.jpg" alt="">
                 <div class="name">
-                <p>Lotus Three milk cake</p>
+                <p class="pName">Lotus Three milk cake</p>
                 <p>2.5 lb</p>
                 </div>
             
                 <p style="font-size:10px;margin-top:2%;">
                     Lotus biscoff spread on top with cream cheese and a fluffy vanilla <br> milky sponge with lotus crumbs on sides                </p>
-                <p style="font-size:15px; font-weight:bold; padding:2% 0px; text-align:center;">price: RS 2000</p>
-                <div class="bt"> <button class="order-button  Cart-btn">Add to cart</button>
+                <p style="font-size:15px; font-weight:bold; padding:2% 0px; text-align:center;">price: RS <span class="pPrice"> 2000 </span></p>
+                <div class="bt"> <button class="btn99 order-button  Cart-btn">Add to cart</button>
                 </div>            </div>
             <div class="box">
                 <img src="./images/cakes/Malteser.jpg" alt="">
                 <div class="name">
-                <p>Belgian Malt cake</p>
+                <p class="pName">Belgian Malt cake</p>
                 <p>2.5 lb</p>
                 </div>
             
                 <p style="font-size:10px; margin-top:2%;">
                     Lotus biscoff spread with cream cheese  on a fliffy vanilla <br> sponge and crushed lotus biscuits on top
                 </p>
-                <p style="font-size:15px; font-weight:bold; padding:2% 0px; text-align:center;">price: RS 2000</p>
-                <div class="bt"> <button class="order-button  Cart-btn">Add to cart</button>
+                <p style="font-size:15px; font-weight:bold; padding:2% 0px; text-align:center;">price: RS <span class="pPrice"> 2000 </span></p>
+                <div class="bt"> <button class="btn99 order-button  Cart-btn">Add to cart</button>
                 </div>            </div>
             <div class="box">
                 <img src="./images/cakes/ferrero-square.jpg" alt="">
                 <div class="name">
-                <p>Ferrero Cake</p>
+                <p class="pName">Ferrero Cake</p>
                 <p>2.5 lb</p>
                 </div>
             
                 <p style="font-size:10px; margin-top:2%;">
                     Lotus biscoff spread with cream cheese  on a fliffy vanilla <br> sponge and crushed lotus biscuits on top
                 </p>
-                <p style="font-size:15px; font-weight:bold; padding:2% 0px; text-align:center;">price: RS 2000</p>
-                <div class="bt"> <button class="order-button  Cart-btn">Add to cart</button>
+                <p style="font-size:15px; font-weight:bold; padding:2% 0px; text-align:center;">price: RS <span class="pPrice"> 2000 </span></p>
+                <div class="bt"> <button class="btn99 order-button  Cart-btn">Add to cart</button>
                 </div>            </div>
         </div>
 
@@ -156,210 +159,226 @@
             <div class="box">
                 <img src="./images/cakes/chocolate cake.jpg" alt="">
                 <div class="name">
-                <p>Ferrero classic Cake</p>
+                <p class="pName">Ferrero classic Cake</p>
                 <p>2.5 lb</p>
                 </div>
             
                 <p style="font-size:10px;margin-top:2%; ">
                     Lotus biscoff spread with cream cheese  on a fliffy vanilla <br> sponge and crushed lotus biscuits on top
                 </p>
-                <p style="font-size:15px; font-weight:bold; padding:2% 0px; text-align:center;">price: RS 2000</p>
-                <div class="bt"> <button class="order-button  Cart-btn">Add to cart</button>
+                <p style="font-size:15px; font-weight:bold; padding:2% 0px; text-align:center;">price: RS <span class="pPrice"> 2000 </span></p>
+                <div class="bt"> <button class=" btn99 order-button  Cart-btn">Add to cart</button>
                 </div>            </div>
             <div class="box">
                 <img src="./images/cakes/creame cake.jpg" alt="">
                 <div class="name">
-                <p>Salted cramel cake</p>
+                <p class="pName">Salted cramel cake</p>
                 <p>2.5 lb</p>
                 </div>
             
                 <p style="font-size:10px;margin-top:2%;">
                     Lotus biscoff spread on top with cream cheese and a fluffy vanilla <br> milky sponge with lotus crumbs on sides                </p>
-                <p style="font-size:15px; font-weight:bold; padding:2% 0px; text-align:center;">price: RS 2000</p>
-                <div class="bt"> <button class="order-button  Cart-btn">Add to cart</button>
+                <p style="font-size:15px; font-weight:bold; padding:2% 0px; text-align:center;">price: RS <span class="pPrice"> 2000 </span></p>
+                <div class="bt"> <button class="btn99 order-button  Cart-btn">Add to cart</button>
                 </div>            </div>
             <div class="box">
                 <img src="./images/cakes/ice cake.jpg" alt="">
                 <div class="name">
-                <p>Red velvet cake</p>
+                <p class="pName">Red velvet cake</p>
                 <p>2.5 lb</p>
                 </div>
             
                 <p style="font-size:10px; margin-top:2%;">
                     Lotus biscoff spread with cream cheese  on a fliffy vanilla <br> sponge and crushed lotus biscuits on top
                 </p>
-                <p style="font-size:15px; font-weight:bold; padding:2% 0px; text-align:center;">price: RS 2000</p>
-                <div class="bt"> <button class="order-button  Cart-btn">Add to cart</button>
+                <p style="font-size:15px; font-weight:bold; padding:2% 0px; text-align:center;">price: RS <span class="pPrice"> 2000 </span></p>
+                <div class="bt"> <button class="btn99 order-button  Cart-btn">Add to cart</button>
                 </div>            </div>
             <div class="box">
                 <img src="./images/cakes/choco cake.jpg" alt="">
                 <div class="name">
-                <p>Choco Cake</p>
+                <p class="pName">Choco Cake</p>
                 <p>2.5 lb</p>
                 </div>
             
                 <p style="font-size:10px; margin-top:2%;">
                     Lotus biscoff spread with cream cheese  on a fliffy vanilla <br> sponge and crushed lotus biscuits on top
                 </p>
-                <p style="font-size:15px; font-weight:bold; padding:2% 0px; text-align:center;">price: RS 2000</p>
-            <div class="bt"> <button class="order-button  Cart-btn">Add to cart</button>
+                <p style="font-size:15px; font-weight:bold; padding:2% 0px; text-align:center;">price: RS <span class="pPrice"> 2000 </span></p>
+            <div class="bt"> <button class="btn99 order-button  Cart-btn">Add to cart</button>
             </div>       </div>
         </div>
       </section>
 
 
-      <footer  class="main-footer">
-        <div class="footer-text">
-          <div>
-            <h1>Social Media</h1>
-            <table>
-              <tr>
-                <td>
-                  <a href="#" target="_blank"><i style="font-size: 20px" class="fa-brands fa-facebook"></i></a>
-                </td>
-                <td>Follow Us on Facebook</td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#" target="_blank"><svg class="instagram" xmlns="http://www.w3.org/2000/svg" width="20px"
-                      viewBox="0 0 448 512">
-                      <defs>
-                        <linearGradient id="instagram-gradient" gradientTransform="rotate(45)">
-                          <stop offset="0%" stop-color="#405de6" />
-                          <stop offset="20%" stop-color="#5851db" />
-                          <stop offset="40%" stop-color="#833ab4" />
-                          <stop offset="60%" stop-color="#c13584" />
-                          <stop offset="80%" stop-color="#e1306c" />
-                          <stop offset="100%" stop-color="#fd1d1d" />
-                        </linearGradient>
-                      </defs>
-  
-                      <path
-                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                    </svg></a>
-                </td>
-                <td>Check Updates on Insta</td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="" target="_blank"><i style="font-size: 20px" class="fa-brands fa-x-twitter"></i>
-                  </a>
-                </td>
-                <td>Follow us on Twitter</td>
-              </tr>
-            </table>
-          </div>
-          <div>
-            <h1>Address</h1>
-            <table>
-              <tr>
-                <td>
-                  <i style="font-size: 20px" class="fa-solid fa-location-dot"></i>
-                </td>
-                <td>
-                  <address>Range Road Rawalpindi</address>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <i style="font-size: 20px" class="fa-solid fa-phone-volume"></i>
-                </td>
-                <td>+92-433-5513998</td>
-              </tr>
-              <tr>
-                <td>
-                  <i style="font-size: 20px" class="fa-solid fa-envelope"></i>
-                </td>
-                <td>rao9376@gmail.com</td>
-              </tr>
-            </table>
-          </div>
-          <div>
-            <h1>Services</h1>
-            <table>
-              <tr>
-                <td>
-                  <i style="font-size: 20px" class="fa-solid fa-business-time"></i>
-                </td>
-                <td>27 hour active</td>
-              </tr>
-              <tr>
-                <td>
-                  <i style="font-size: 20px" class="fa-solid fa-truck"></i>
-                </td>
-                <td>Free Delivery</td>
-              </tr>
-              <tr>
-                <td>
-                  <i style="font-size: 20px" class="fa-regular fa-comment"></i>
-                </td>
-                <td>24/7 Support</td>
-              </tr>
-              <tr>
-                <td>
-                  <i style="font-size: 20px" class="fa-regular fa-credit-card"></i>
-                </td>
-                <td>Secure Payment</td>
-              </tr>
-              <tr>
-                <td>
-                  <i style="font-size: 20px" class="fa-solid fa-lock"></i>
-                </td>
-                <td>100% Secure</td>
-              </tr>
-            </table>
-          </div>
+    
+        <div class="container">
+            <form action="#" class="form">
+                <h3>Billing and Shipping</h3>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <label for="email">First Name <small>*</small> </label>
+                <input type="text" id="fname" placeholder="Enter your first name" required>
+                <label for="email">Last Name <small>*</small></label>
+                <input type="text" id="lname" placeholder="Enter your last name" required>
+                <label for="email">Phone <small>*</small></label>
+                <input type="tel" id="number" placeholder="Enter yourPhone" required>
+                <label for="email">Address <small>*</small></label>
+                <input type="text" id="address" placeholder="Enter your full addess e.g. street, house no." required>
+                <label for="email">City <small>*</small></label>
+                <input type="text" id="city" placeholder="Enter your city" required>
+                <input type="number" name="zipcode" id="zipcode" placeholder="Zipcode" required>
+                <p class="commment">
+                    <label for="note">Order Note </label>
+                    <textarea name="order_comment" id="order_comment" cols="30" rows="10"
+                        placeholder="Note about your order, e.g. special notes for delivery or icing message on cake."></textarea>
+                </p>
+        
+                <div class="btn">
+        
+                    <button>
+                        <a href="#" class="btn-primary  clos">PLace Order</a>
+                    </button>
+                    <button>
+                        <a href="#" class="btn-primary clos">Cancel</a>
+                    </button>
+                </div>
+        
+        
+            </form>
         </div>
-        <div class="mail">
-          <h1 class="heading-1">Send Us Email to keep Update</h1>
-          <form action="">
-            <input type="email" name="email" placeholder="Your Email" />
-            <button type="submit">Subscribe</button>
-  
-            <div class="social">
-              <div class="s11">
-                <a href="#" target="_blank"><i style="font-size: 2rem" class="fa-brands fa-facebook"></i></a>
-              </div>
-              <div class="s21">
-                <a href="#" target="_blank"><svg class="instagram" xmlns="http://www.w3.org/2000/svg" width="1.9rem"
-                    viewBox="0 0 448 512">
-                    <defs>
-                      <linearGradient id="instagram-gradient" gradientTransform="rotate(45)">
-                        <stop offset="0%" stop-color="#405de6" />
-                        <stop offset="20%" stop-color="#5851db" />
-                        <stop offset="40%" stop-color="#833ab4" />
-                        <stop offset="60%" stop-color="#c13584" />
-                        <stop offset="80%" stop-color="#e1306c" />
-                        <stop offset="100%" stop-color="#fd1d1d" />
-                      </linearGradient>
-                    </defs>
-  
-                    <path
-                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                  </svg></a>
-              </div>
-              <div class="s31">
-                <a href="" target="_blank"><i style="font-size: 2rem" class="fa-brands fa-linkedin"></i>
-                </a>
-              </div>
-              <div class="s41">
-                <a href="" target="_blank"><i style="font-size: 2rem" class="fa-brands fa-x-twitter"></i>
-                </a>
-              </div>
-              <div class="s51">
-                <a href="" target="_blank"><i style="font-size: 2rem" class="fa-brands fa-youtube"></i></a>
-              </div>
-              <div class="s61">
-                <a href="" target="_blank"><i style="font-size: 2rem" class="fa-brands fa-pinterest"></i></a>
-              </div>
+        
+    <section class="cart1" id="draggable">
+    
+        <div class="cart-container">
+            <h1>Your Cart</h1>
+            <table class="cart-table" id ="table" >
+                <thead>
+                    <tr>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Total</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Product rows will be added dynamically here  -->
+                </tbody>
+            
+            <tfoot>
+             <tr class="total-row">
+                    <td colspan="3">Complete Total:</td>
+                    <td id="completeTotal">0.00</td>
+                </tr>
+        </tfoot>
+      </table>
+    
+            <div class="cart-summary">
+                 <button class="checkout-btn">Proceed to Checkout</button>
             </div>
-          </form>
         </div>
-    </footer>
+    </section>
+
+
+      <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2><span class="highlight">Bakery</span> Sweet Home</h2>
+                <p>Indulge in our freshly baked treats made with the finest ingredients. We bring the warmth and comfort of home-baked goodness right to your table.</p>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i> &nbsp; 123-456-789</span>
+                    <span><i class="fas fa-envelope"></i> &nbsp; info@bakery.com</span>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+      <hr class="line">
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <table>
+                    <tr>
+                        <td><i class="fas fa-home hel"></i></td>
+                        <td class="hov"><a href="#">Home</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-info-circle hel"></i></td>
+                        <td><a href="#">About</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-utensils hel"></i></td>
+                        <td><a href="#">Menu</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-shopping-cart hel"></i></td>
+                        <td><a href="#">Cart</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-images hel"></i></td>
+                        <td><a href="#">Login</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-envelope-open-text hel"></i></td>
+                        <td><a href="#">Contact</a></td>
+                    </tr>
+                </table>
+            </div>
+      <hr>
+            <div class="footer-section menu">
+                <h2>Popular Items</h2>
+                <table>
+                    <tr>
+                        <td><i class="fas fa-birthday-cake hel"></i></td>
+                        <td><a href="#">Chocolate Cake</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-bread-slice hel"></i></td>
+                        <td><a href="#">Browines</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-cookie-bite hel"></i></td>
+                        <td><a href="#">Cookies</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-mug-hot hel"></i></td>
+                        <td><a href="#">Cupcakes</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="material-symbols-outlined hel">
+                          icecream
+                          </span></td>
+                        <td><a href="#">Dessert</a></td>
+                    </tr>
+                </table>
+            </div>
+      <hr>
+            <div class="footer-section newsletter">
+                <h2>Join Our Newsletter</h2>
+                <p>Subscribe to receive special offers, updates, and delicious recipes straight to your inbox.</p>
+                <form>
+                    <input type="email" placeholder="Your email address..." required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Sweet Home | Designed by  " Rao Umair "   | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </div>
+      </footer>
+
 
 
 
 
     <script src="./JS/local.js"></script>
+    <script src="JS/cart.js"></script>
+    <script>
+        $( function() {
+          $( "#draggable" ).draggable();
+        } );
+        </script>
 </body>
 </html>

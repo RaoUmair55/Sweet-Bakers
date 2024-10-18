@@ -51,6 +51,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto' ,sans-serif;
+
   }
   nav li {
     height: 50px;
@@ -63,6 +65,8 @@
     display: flex;
     align-items: center;
     color: black;
+    font-family: 'Roboto' ,sans-serif;
+
   }
   nav a:hover {
     background-color: #b9b7b7;
@@ -81,6 +85,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    z-index: 999;
   }
   .sidebar li {
     width: 100%;
@@ -112,158 +117,176 @@
 
   
 /* footer */
- .social {
-    padding: 7% 0%;
-    display: flex;
-    /* justify-content: center; */
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    /* background-color: rgba(230, 227, 227, 0.63); */
-    /* margin: 5% 0; */
-  }
-  
-  .social div {
-    width: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* height: 14%; */
-    border-radius: 50%;
-    border: 2px solid;
-    text-align: center;
-    /* padding: 0.5%; */
-    /* margin: 0.5% 2%; */
-  }
-  .fa-facebook:hover {
-    color: blue;
-  }
-  
-  .instagram {
-    transition: all 0.3s ease;
-  }
-  
-  .instagram:hover path {
-    fill: url(#instagram-gradient); /* Apply the gradient on hover */
-  }
-  .fa-linkedin:hover {
-    color: blue;
-  }
-  
-  .fa-x-twitter {
-    color: #333;
-  }
-  .fa-x-twitter:hover {
-    color: rgb(0, 0, 0);
-  }
-  .fa-youtube:hover {
-    color: red;
-  }
-  
-  .fa-pinterest:hover {
-    color: red;
-  }
-  
-  .mail {
-    text-align: center;
-  }
-  .mail input {
-    padding: 2%;
-    margin-top: 5%;
-  }
-  .mail button {
-    margin-top: 2%;
-    padding: 2% 5%;
-    background: transparent;
-    border: 2px solid blue;
-  }
-  
-  .main-footer {
-    /* padding: 0% 2%; */
-    display: flex;
-    justify-content: space-evenly;
-     flex-wrap: wrap;
+.footer {
+  background-color: #003366b6;
+  /* backdrop-filter: blur(20px); */
+  border-top: 1px solid black;
+  padding: 20px 0;
+  font-family: 'Arial', sans-serif;
+  color: white;
+text-align:center;
+}
 
-     backdrop-filter: blur(16px) saturate(380%);
-    padding: 2%;
-    border: 2px solid gray;
-    text-align: center;
-    -webkit-backdrop-filter: blur(16px) saturate(380%);
-    background-color: rgba(17, 25, 40, 0.25);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125); 
-    filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
-    /* transition: box-shadow .5s; */
-    /* box-shadow: 3px 3px 8px rgba(177, 174, 174, 0.959), 
-    1px 1px 12px rgba(190, 190, 190, 0.849); */
 
-  }
-  .footer-text {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .footer-text div {
-    /* margin: 0px 1%; */
-    flex-wrap: wrap;
-    color: white;
-  }
-  
-  .footer-text div h1 {
-    margin-bottom: 2%;
-    text-align: center;
-    color: white;
-  }
 
-  .fa-solid, .fa-regular{
-    color: black;
-  }
-  
-  /* Media Quries for footer */
-  
-  @media (max-width: 1170px) {
-    .main-footer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .footer-text {
-      width: 100%;
-    }
-  
-    .footer-text div {
-      margin: 0px 5%;
-    }
-    .mail input {
-      margin-top: 5%;
-      width: 100%;
-    }
-  }
-  
-  @media (max-width: 700px) {
-    .footer-text {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-    }
-    .footer-text div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .heading-1 {
-      width: 100%;
-      text-wrap: pretty;
-      font-size: larger;
-    }
-    .mail input {
-      width: 100%;
-    }
-  
-    .social div{
-      padding: 2%;
-    }
-  }
-  
+/* google icon */
+.material-symbols-outlined{
+  color: black;
+}
+
+
+
+.footer h2 {
+  font-size: 22px;
+  color: #000000;
+  margin-bottom: 20px;
+
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer .highlight {
+  color: #ffffff;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer .footer-section {
+  flex: 1;
+  padding: 20px;
+  min-width: 250px;
+}
+
+.footer .footer-section.about {
+  max-width: 300px;
+}
+
+.footer .contact span {
+  display: block;
+  margin: 10px 0;
+}
+
+.footer .socials a {
+  margin: 0 10px;
+  font-size: 18px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer .socials a:hover {
+  color: #0077a8; /* Change to respective color */
+}
+
+
+.footer .links table,
+.footer .menu table {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.footer table td {
+  padding: 8px 0;
+  vertical-align: middle;
+}
+
+.footer table td i {
+  color: black;
+  font-size: 18px;
+  width: 24px;
+  text-align: center;
+}
+
+.footer table tr:hover .hel{
+  color: white;
+
+}
+
+.footer table td a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  width: 100%;
+  transition: color 0.3s;
+  transition: 1s;
+}
+
+/* .footer table td a:hover {
+  color: #0077a8;
+} */
+
+
+.fa-pinterest:hover{
+  color: red;
+}
+
+.fa-pinterest:hover{
+  color: red;
+}
+.fa-instagram:hover{
+  color: lightpink;
+}
+
+
+
+.footer table td a:hover  {
+  text-decoration:underline black 3px;
+}
+
+.footer .newsletter form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .newsletter input[type="email"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 93%;
+}
+
+.footer .newsletter button {
+  padding: 10px;
+  background-color: #0077a8;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.footer .newsletter button:hover {
+  background-color: #005d79;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+.footer-bottom a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline white 2px;
+}
+
+
+hr{
+  border: 1px solid #5c7fa3b6 ;
+}
