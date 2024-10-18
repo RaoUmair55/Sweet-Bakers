@@ -386,3 +386,392 @@ body{
     padding: 1rem;
   }
 }
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Sevillana&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+  --left-bg-color: rgba(43, 43, 43, 0.8);
+  --right-bg-color: rgba(43, 43, 43, 0.8);
+  --left-btn-hover-color: rgba(87, 84, 236, 1);
+  --right-btn-hover-color: rgba(28, 122, 28, 1);
+  --hover-width: 75%;
+  --other-width: 25%;
+  --speed: 1000ms;
+}
+
+body{
+  background-color:lightblue;
+}
+
+.main {
+  background-image: url(../images/Background-images/Bg-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  /*background-attachment: fixed;*/
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 5%;
+}
+.main-text {
+  width: 50%;
+  text-align: center;
+  margin-top: 0.5%;
+  margin-bottom: 5%;
+  padding: 3%;
+  height: 100%;
+  margin-bottom: 5%;
+}
+
+.main-text h1 {
+  font-size: clamp(2.5rem, 3vw, 4rem);
+  margin-top: 2%;
+  color: rgb(0, 0, 0);
+  font-family: 'Roboto' ,sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: transparent; /* Make the text color transparent */
+    -webkit-text-stroke: 3px black; /* Outline color and thickness */
+    text-transform: uppercase; /* Optional: Makes the text uppercase */
+    letter-spacing: 2px; /* Optional: Adjusts the spacing between letters */
+}
+
+
+.hea h1{
+  color: rgb(0, 0, 0);
+  font-family: 'Roboto' ,sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: transparent; /* Make the text color transparent */
+    -webkit-text-stroke: 3px black; /* Outline color and thickness */
+    text-transform: uppercase; /* Optional: Makes the text uppercase */
+    letter-spacing: 2px; 
+}
+
+.main-text p {
+  font-size: clamp(1.6rem, 6vw, 1.9rem);
+  color: rgb(0, 0, 0);
+  font-weight: 200;
+  overflow: hidden;
+  line-height: 2;
+  font-family: "Sevillana", sans-serif;
+}
+.main-text button {
+  background-color: transparent;
+  padding: 2.5% 7%;
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
+  margin-top: 3%;
+  margin-bottom: 2%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 9px;
+  transition: background-color 0.5s ease;
+}
+
+.main-text button:hover {
+  background-color: rgb(0, 162, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-color: black;
+}
+
+.main-image {
+  width: 50%;
+  margin-top: 0.5%;
+  animation: float 3.5s linear infinite;
+  margin-bottom: 5%;
+  padding: 3%;
+}
+
+@media (max-width: 997px) {
+  .main-image {
+    position: absolute;
+    z-index: -1.5;
+    top:20%;
+  }
+  /* .main-image{
+    animation: none;
+  } */
+  .main-text {
+    width: 100%;
+    z-index: 2;
+    color: #000000;
+    height: auto;
+  }
+  .main-text button{
+    margin-bottom: 0%;
+  }
+  .main-text h1{
+    font-size: 2.5rem;
+  }
+  .main-text p{
+    font-size: 2.4rem;
+    color: black;
+    /* color:rgb(255, 255, 255); */
+    text-shadow: 2px 2px 4px rgb(255, 255, 255), 
+    4px 4px 8px rgb(207, 207, 207);  }
+
+    .main{
+      padding-bottom: 1%;
+    }
+}
+
+
+@media (max-width:810px) {
+  .main-text h1{
+    font-size: 2.5rem;
+  }
+  .main-text p{
+    font-size: 1.9rem;
+    color: black;
+    /* color:rgb(255, 255, 255); */
+    text-shadow: 2px 2px 4px rgb(255, 255, 255), 
+    4px 4px 8px rgb(224, 219, 219);  }
+}
+@media (max-width: 576px) {
+  .main-image {
+    position: absolute;
+    z-index: -1.5;
+    top:50%;
+  }
+  /* .main-image{
+    animation: none;
+  } */
+  .main-text {
+    width: 100%;
+    z-index: 2;
+    backdrop-filter: blur(2px);
+    height: auto;
+  }
+
+  .main-text p{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width:518px){
+  .main-text p{
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 405px) {
+  .main-text button {
+    background-color: transparent;
+    padding: 2% 7%;
+    border: 3px solid blue;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    font-size: 1.4rem;
+    font-weight: 200;
+  }
+  .main-text h1 {
+    font-size: 30px;
+    margin-top: 0.5%;
+  }
+
+  .main-text p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 395px) {
+  .main-text p {
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+
+  50% {
+    transform: translateY(5rem);
+  }
+}
+
+.hea {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color:lightblue;
+  padding: 2%;
+}
+
+/* split page section 2 */
+
+.split1 {
+  font-family: "Poppins", sans -serif;
+  height: 100vh;
+  overflow: hidden;
+
+ 
+  }
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #333;
+}
+.split h1 {
+  font-size: clamp(1.4rem, 5vw, 2.9rem);
+  color: #fff;
+  font-family: "Poppins", sans -serif;
+  font-weight: bold;
+  font-style: italic;
+  color: transparent; /* Make the text color transparent */
+  -webkit-text-stroke: 2px rgb(255, 255, 255); /* Outline color and thickness */
+  text-transform: uppercase; /* Optional: Makes the text uppercase */
+  letter-spacing: 2px; 
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 40%;
+  top: 40%;
+  transform: translateX (-50%);
+  text-decoration: none;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 14rem;
+  padding: 1.5rem;
+  transition: background-color 0.5s ease;
+}
+
+.split.left .btn:hover {
+  background-color: rgb(27, 176, 226);
+  border-color: white;
+}
+
+.split.right .btn:hover {
+  background-color: rgb(27, 166, 212);
+  border-color: white;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #333;
+}
+
+.text {
+  align-self: center;
+  text-align: center;
+  font-weight: 600;
+  font-family: "ubuntu", sans-serif;
+  font-size: 30px;
+  text-shadow: 0 1px 0 #1d0101;
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left: 0;
+  background: url("../images/SliderImages/01.1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.left::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--left-bg-color);
+}
+
+.split.right {
+  right: 0;
+  background: url("../images/SliderImages/02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.right::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--right-bg-color);
+}
+
+.split.right,
+.split.left,
+.split.right::before,
+.split.left::before {
+  transition: all var(--speed) ease-in-out;
+}
+
+.hover-left .left {
+  width: var(--hover-width);
+}
+
+.hover-left .right {
+  width: var(--other-width);
+}
+
+.hover-right .right {
+  width: var(--hover-width);
+}
+
+.hover-right .left {
+  width: var(--other-width);
+}
+
+/* Media Quries */
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+    top: 30%;
+  }
+
+  .btn {
+    padding: 1.2rem;
+    width: 12rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .btn {
+    left: 20%;
+
+    font-size: 1rem;
+    font-weight: 100;
+    width: 10rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .btn {
+    left: 30%;
+
+    font-size: 1rem;
+    font-weight: 100;
+    width: 7rem;
+    padding: 1rem;
+  }
+}

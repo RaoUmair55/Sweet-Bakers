@@ -230,3 +230,236 @@
     }
 
 }  
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    overflow: hidden;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 5px;
+    width: 100vw;
+    height: 100vh;
+    animation: backgroundAnimation 10s infinite alternate;
+    position: relative; /* Required for positioning the form */
+    /* padding: 20px; Adding padding to give space around the grid */
+}
+
+.grid-item {
+    background: linear-gradient(145deg, #2a2d34, #1a1e23); /* Darker gradient for more contrast */
+    width: 100%;
+    aspect-ratio: 1; /* Ensures the box is a perfect square */
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out, background 0.2s ease-in-out;
+    position: relative;
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+.grid-item::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 10px;
+    background: rgba(0, 204, 255, 0.8); /* Brighter light blue glow */
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
+}
+
+.grid-item:hover::before {
+    opacity: 1;
+}
+
+.grid-item:hover {
+    transform: scale(1.3); /* Slight scale for subtle effect */
+    background: linear-gradient(145deg, #1a1e23, #2a2d34); /* Invert gradient on hover */
+}
+
+/* Login Form Styles */
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e0f7fa; /* Light blue background */
+    border-radius: 10px;
+    padding: 50px 20px;
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.8); /* Light blue shadow */
+    width: 33%;
+    height: auto; /* Adjust width as needed */
+    box-sizing: border-box;
+    text-align: centers;
+    z-index: 10; /* Ensure it appears on top of the grid */
+}
+
+.login-form h2 {
+    margin: 0 0 15px;
+    color: #00796b; /* Slightly darker blue for text */
+    text-align: center;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #00796b; /* Consistent with the text color */
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #00796b; /* Blue border for inputs */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00796b; /* Darker blue for button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-form button:hover {
+    background-color: #004d40; /* Darker shade for button on hover */
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #000;
+    }
+    50% {
+        background-color: #111;
+    }
+    100% {
+        background-color: #000;
+    }
+}
+
+
+@media (min-width: 2330px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Larger grid items */
+    }
+
+    .grid-item {
+        min-width: 150px;
+        aspect-ratio: 1;
+    }
+    .login-form {
+        width: 700px; /* Increase the width of the login form */
+        padding: 60px 30px; /* Add more padding for a spacious look */
+    }
+
+    .login-form h2 {
+        font-size: 24px; /* Larger font size for the heading */
+    }
+
+    .login-form input,
+    .login-form button {
+        font-size: 18px; /* Adjust font size for inputs and button */
+    }
+}
+
+
+
+/* Responsiveness for large screens (PC) */
+@media (min-width: 1400px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    }
+
+    .grid-item {
+        min-width: 150px;
+        aspect-ratio: 1;
+    }
+
+    .login-form h2 {
+        font-size: 24px; 
+    }
+
+    .login-form input,
+    .login-form button {
+        font-size: 18px;
+    }
+}
+
+
+ /* @media (max-width: 1400px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+     }
+
+    .grid-item {
+        min-width: 150px;
+        aspect-ratio: 1;
+    }
+    .login-form {
+        width: 800px; 
+    }
+
+    .login-form h2 {
+        font-size: 24px; 
+    }
+
+    .login-form input,
+    .login-form button {
+        font-size: 18px; 
+    }
+}  */
+
+
+
+
+/* Existing media queries for smaller screens */
+@media (max-width: 768px) {
+    .grid-item {
+        /* Adjust the minimum size of the grid items for smaller screens */
+        min-width: 80px;
+    }
+    
+    .login-form {
+        width: 95%; /* Further adjust width for smaller screens */
+        max-width: 300px; /* Reduce maximum width */
+    }
+}
+
+@media (max-width: 480px) {
+    .login-form {
+        width: 90%; /* Full width on very small screens */
+        max-width: none; /* Remove max-width to fit screen */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .login-form h2 {
+        font-size: 18px; /* Smaller heading size */
+    }
+
+    .login-form input,
+    .login-form button {
+        font-size: 14px; /* Adjust font size for better readability */
+    }
+
+}  
